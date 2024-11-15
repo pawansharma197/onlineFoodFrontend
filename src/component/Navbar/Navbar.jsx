@@ -3,6 +3,9 @@ import React from 'react'
 import SearchIcon from '@mui/icons-material/Search';
 import Avatar from '@mui/material/Avatar';
 import { pink } from '@mui/material/colors';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import Badge from '@mui/material/Badge';
+import './Nabbar.css'
 
 const Navbar = () => {
   return (
@@ -25,7 +28,14 @@ const Navbar = () => {
 
             <div className=''>
             <Avatar sx={{ bgcolor: "white", color: pink.A400 }}>P</Avatar>
+            </div>
 
+            <div className=''>
+            <IconButton>
+                <Badge color = 'primary' badgeContent ={3}>
+                  <ShoppingCartIcon sx={{fontSize:"1.5rem"}} />
+                </Badge>
+            </IconButton>
             </div>
 
         </div>
